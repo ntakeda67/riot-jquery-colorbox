@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "grunt": "^1.0.2",
+    "browser-sync": "^2.23.7",
     "jquery-colorbox": "^1.6.4",
     "riot": "^3.9.4"
   },
-  "devDependencies": {
-    "grunt": "^1.0.2"
-  },
   "scripts": {
+    "start": "npm run riot & npm run server",
+    "riot": "node_modules/.bin/riot tags js/tags",
+    "server": "node_modules/.bin/browser-sync start --server --files 'js/**/*.*'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
