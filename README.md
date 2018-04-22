@@ -1,0 +1,1 @@
+# riot-jquery-colorbox
